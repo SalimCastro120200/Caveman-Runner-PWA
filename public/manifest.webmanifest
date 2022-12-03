@@ -1,0 +1,43 @@
+{
+    "name": "Caveman Runner PWA 180017",
+    "short_name": "CR_180017",
+    "description": "Progressive Web Application para videojuego Caveman Runner",
+    "start_url": "/",
+    "theme_color": "black",
+    "background_color": "black",
+    "orientation": "portrait",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/icons/shop_icon_16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/shop_icon_24.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/shop_icon_32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/shop_icon_64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/shop_icon_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/onlineStore_Icon_144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+        
+    ]
+}
