@@ -16,57 +16,6 @@ const Index = () => {
 								<div className="intro-content">
 									<p>LFS INDUSTRIES</p>
 									<h1>Caveman Runner</h1>
-
-									<div className="intro-btn">
-										<Link href="#">
-											<a className="btn btn-primary">
-												Launchpad
-											</a>
-										</Link>
-										<Link href="#">
-											<a className="btn btn-outline-primary">
-												KYC for IDO
-											</a>
-										</Link>
-									</div>
-									<div className="intro-search">
-										<form action="#">
-											<input
-												type="text"
-												placeholder="Search Here"
-											/>
-											<span>
-												<i className="ri-search-line"></i>
-											</span>
-										</form>
-									</div>
-									<div className="intro-social">
-										<Link href="#">
-											<a>
-												<i className="bi bi-facebook"></i>
-											</a>
-										</Link>
-										<Link href="#">
-											<a>
-												<i className="bi bi-twitter"></i>
-											</a>
-										</Link>
-										<Link href="#">
-											<a>
-												<i className="bi bi-tiktok"></i>
-											</a>
-										</Link>
-										<Link href="#">
-											<a>
-												<i className="bi bi-telegram"></i>
-											</a>
-										</Link>
-										<Link href="#">
-											<a>
-												<i className="bi bi-discord"></i>
-											</a>
-										</Link>
-									</div>
 								</div>
 							</div>
 							<div className="col-xl-6">
@@ -78,34 +27,6 @@ const Index = () => {
 					</div>
 				</div>
 
-				<div className="upcoming-project section-padding">
-					<div className="container">
-						<div className="row">
-							<div className="col-xl-6">
-								<div className="section-title">
-									<h2>Ultimos Jugadores</h2>
-								</div>
-							</div>
-						</div>
-						<div className="row">
-							<ExploreList/>
-						</div>
-					</div>
-				</div>
-				<div className="completed-project section-padding">
-					<div className="container">
-						<div className="row">
-							<div className="col-xl-6">
-								<div className="section-title">
-									<h2>Completed Projects</h2>
-								</div>
-							</div>
-						</div>
-						<div className="row">
-							<CompleteList/>
-						</div>
-					</div>
-				</div>
 
 				<div className="what-we-do section-padding">
 					<div className="container">
@@ -121,36 +42,41 @@ const Index = () => {
 							</div>
 							<div className="col-lg-6">
 								<div className="what-we-do-content">
-									<span>WELCOME TO GigoSTARTER</span>
-									<h3>What We Do</h3>
+									<span>Bienvenidos a CAVEMAN RUNNER</span>
+									<h3>¿Quienes somos y Qué hacemos?</h3>
 									<p>
-										We’re a blockchain gaming launchpad
-										focused on growing the Gigo ecosystem
-										and the metaverse.
+										Somos LFS Industries una empresa dedicada al 
+										Desarrollo de Software a medida. Surgimos de 
+										la necesidad de proveer una alternativa totalmente 
+										personalizada, que se pudiera adquirir a través 
+										de un modelo de comisión o a través del pago de 
+										desarrollo que fuera potente, de gran capacidad 
+										transaccional y analítica, con manejo de POS e inventario.
 									</p>
 									<p>
-										Built on Gigo’s JumpNet with a roadmap
-										towards Efinity, our proprietary
-										platform will enable creators and game
-										developers to run capital-raising
-										campaigns and build communities using
-										blockchain technology.
+									Caveman Runner es un juego de tipo Endless Runner 
+									lo cual significa que es un juego sin fin y en este tipo de juegos 
+									los jugadores corren con nuestro protagonista sin detenerse nunca. 
+									Para ser el mejor corredor, deben tener buenos reflejos para sobrevivir 
+									el mayor tiempo posible y obtener el máximo de puntos. Para seguir 
+									en el juego es de suma importancia tener habilidad para saltar o 
+									deslizarse por el suelo en el momento adecuado para esquivar los 
+									obstáculos que se interponen en el camino. 
+									</p>
+									<p></p>
+									<p>
+										Rostros detras de LFS Industries	 
 									</p>
 									<p>
-										Beyond issuing tokens, we provide game
-										developers a way to explore other
-										innovative ways of raising capital to
-										fund their projects through the sale of
-										virtual items as non-fungible tokens
-										(NFTs).
+										Diseñador de Videojuego: Felipe Paredes Perez 
 									</p>
 									<p>
-										Our incubation program, supported by an
-										accredited partner network, will provide
-										projects with end-to-end support to
-										develop sustainable strategies and
-										launch successful campaigns.
+										Desarollador Backend: Luis Alejandro Gomez Santillan
 									</p>
+									<p>
+										Desarollador Frontend: Salim Rafael Castro Ortiz  
+									</p>
+									
 								</div>
 							</div>
 						</div>
@@ -165,20 +91,17 @@ const Index = () => {
 									<span>
 									<i class="ri-send-plane-fill"></i>
 									</span>
-									<h6>Our Mission</h6>
+									<h6>Misión</h6>
 									<h3>
-										Create Ecosystem For
-										Blockchain Gaming
+										Crear Un Ecosistema Gamer
 									</h3>
 									<p>
-										To help create a better world by
-										embracing blockchain-powered emerging
-										technologies. We believe we are in a
-										pivotal moment in history where humanity
-										is preparing for the New Normal Virtual
-										worlds will accelerate us into this new
-										reality, revolutionizing how we live,
-										work and play.
+									Para ayudar a crear un mundo mejor adoptando tecnologías 
+									emergentes impulsadas por LFS Industries. Creemos que estamos 
+									en un momento crucial en la historia donde la humanidad 
+									se está preparando para la Nueva Normalidad Los mundos virtuales 
+									nos acelerarán hacia esta nueva realidad, revolucionando la forma 
+									en que vivimos, trabajamos y jugamos.
 									</p>
 								</div>
 							</div>
@@ -187,117 +110,17 @@ const Index = () => {
 									<span>
 									<i class="ri-eye-fill"></i>
 									</span>
-									<h6>OUR VISION</h6>
-									<h3>Building A Community</h3>
+									<h6>Visión</h6>
+									<h3>Construir Una Comunidad</h3>
 									<p>
-										To build a thriving ecosystem for
-										blockchain gaming and introduce new ways
-										for players earn crypto in a fun,
-										engaging way. Community is the core of
-										our organization, and we’re building a
-										tribe of forward-thinking
-										early-adopters, creators and supporters.
+									Construir un ecosistema próspero para
+									juegos blockchain e introducir nuevas formas
+									para que los jugadores ganen criptomonedas de forma divertida,
+									manera atractiva. La comunidad es el núcleo de
+									nuestra organización, y estamos construyendo un
+									tribu de visión de futuro
+									primeros usuarios, creadores y seguidores.
 									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="creating section-padding">
-					<div className="container">
-						<div className="row">
-							<div className="col-md-6">
-								<div className="creating-content">
-									<img
-										src="/images/items/4.jpg"
-										class="img-fluid rounded"
-										alt=""
-									/>
-									<h3>Embrace the Gigo Ecosystem</h3>
-									<p>
-										We help creators and game development
-										studios embrace Gigo robust blockchain
-										ecosystem for their Bblockchain and
-										digital asset strategies. We will guide
-										developers on integrating and move their
-										NFTs from any chain onto Efinity.
-									</p>
-								</div>
-							</div>
-							<div className="col-md-6">
-								<div className="creating-content">
-									<img
-										src="/images/items/5.jpg"
-										class="img-fluid rounded"
-										alt=""
-									/>
-									<h3>Embrace the Gigo Ecosystem</h3>
-									<p>
-										We help creators and game development
-										studios embrace Gigo robust blockchain
-										ecosystem for their Bblockchain and
-										digital asset strategies. We will guide
-										developers on integrating and move their
-										NFTs from any chain onto Efinity.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="built-in section-padding">
-					<div className="container">
-						<div className="row">
-							<div className="col-xl-6">
-								<div className="section-title">
-									<h2>Built On Gigo's Jumpnet Blockchain</h2>
-								</div>
-							</div>
-						</div>
-						<div className="row align-items-center">
-							<div className="col-lg-4">
-								<div className="built-in-list">
-									<ul>
-										<li><i class="ri-arrow-right-s-line"></i> No gas fees</li>
-										<li><i class="ri-arrow-right-s-line"></i> Carbon-negative NFTs</li>
-										<li><i class="ri-arrow-right-s-line"></i> Smart contract support</li>
-									</ul>
-								</div>
-							</div>
-							<div className="col-lg-8 col-md-12">
-								<div className="row">
-									<div className="col-md-4">
-										<div className="built-in-content">
-											<span><i class="ri-rocket-fill"></i></span>
-											<h4>Lunchpad</h4>
-											<p>
-												Buying and Selling of NFTs,
-												in-game items and more
-											</p>
-										</div>
-									</div>
-									<div className="col-md-4">
-										<div className="built-in-content">
-											<span><i class="ri-group-fill"></i></span>
-											<h4>Management</h4>
-											<p>
-												Buying and Selling of NFTs,
-												in-game items and more
-											</p>
-										</div>
-									</div>
-									<div className="col-md-4">
-										<div className="built-in-content">
-											<span><i class="ri-award-fill"></i></span>
-											<h4>Reward</h4>
-											<p>
-												Buying and Selling of NFTs,
-												in-game items and more
-											</p>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -309,7 +132,7 @@ const Index = () => {
 						<div className="row">
 							<div className="col-xl-6">
 								<div className="section-title">
-									<h2>Meet Our Team</h2>
+									<h2>Conoce a Nuestro Equipo	</h2>
 								</div>
 							</div>
 						</div>
@@ -319,141 +142,10 @@ const Index = () => {
 					</div>
 				</div>
 
-				<div className="investor section-padding">
-					<div className="container">
-						<div className="row justify-content-center">
-							<div className="col-xl-6">
-								<div className="section-title text-center">
-									<h2>Institutional Investors</h2>
-								</div>
-							</div>
-						</div>
-						<div className="row justify-content-center">
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/1.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/2.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/3.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/4.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/5.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/6.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/7.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/8.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/9.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/10.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/11.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div className="col-auto">
-								<div className="investor-brand">
-									<img
-										src="/images/brand/2.png"
-										class="img-fluid"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</LayoutFront>
 		</>
 	);
 };
-
-// export const getServerSideProps = async ( context ) => {
-// 	const res = await fetch( "http://localhost:5000/players" )
-// 	const games = await res.json()
-
-// 	return {
-// 		props: {
-// 			game : games
-// 		}
-// 	}
-// }
 
 export default Index;

@@ -15,7 +15,7 @@ function Signin() {
                                     </a>
                                 </Link>
                                 <h4 className="card-title mt-5">
-                                    Sign up to Neftify
+                                    Inicia Sesión
                                 </h4>
                             </div>
                             <div className="auth-form card">
@@ -23,12 +23,12 @@ function Signin() {
                                     <SigninForm />
                                     <div className="text-center">
                                         <p className="mt-3 mb-0">
-                                            <Link href="/signin">
+                                            <Link href="/signup">
                                                 <a className="text-primary">
-                                                    Sign in 
+                                                    Registrate a Caveman Runner
                                                 </a>
                                             </Link>
-                                             to your account
+                                              
                                         </p>
                                     </div>
                                 </div>
@@ -52,4 +52,7 @@ function Signin() {
         </>
     );
 }
+
+
+
 export default Signin;

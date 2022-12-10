@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/leaderboard": [
+    "/signin": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/leaderboard.js"
+      "static/chunks/pages/signin.js"
     ],
-    "/ranking": [
+    "/signup": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ranking.js"
+      "static/chunks/pages/signup.js"
     ]
   },
   "ampFirstPages": []

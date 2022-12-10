@@ -57,16 +57,16 @@ const IgoRanking = ({players, error}) => {
                                             <tbody>
                                                 <tr>
                                                     <th>ID del Jugador</th>
+                                                    <th>Nickname</th>
                                                     <th>Nombre</th>
                                                     <th>Correo Electronico</th>
-                                                    <th>Nickname</th>
                                                 </tr>
                                                 {players.map((player) => (
                                                     <tr key={player.id}>
-                                                        <td width='40%'>{player.id}</td>
-                                                        <td width='40%'>{player.name}</td>
-                                                        <td width='20%'>{player.email}</td>
-                                                        <td width='20%'>{player.nickname}</td>
+                                                        <td width='20%'>{ player.id }</td>
+                                                        <td width='20%'>{ player.gamertag }</td>
+                                                        <td width='40%'>{ player.nombres } { player.paterno } { player.materno }</td>
+                                                        <td width='40%'>{ player.correo }</td>
                                                     </tr>
                                                 ),
                                                 )}
@@ -86,7 +86,7 @@ const IgoRanking = ({players, error}) => {
 
 IgoRanking.getInitialProps = async ctx => {
     try {
-      const res = await axios.get('http://localhost:5000/players');
+      const res = await axios.get('http://localhost:1987/players');
       const players = res.data;
       return { players};
     } catch (error) {

@@ -1,54 +1,85 @@
-import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
+
+import { ErrorMessage, Field, Form, Formik } from "formik";
+
 import Link from "next/link";
+import axios from "axios";
+import { useState } from "react";
+
 const initialValues = {
-    email: "",
-    password: "",
+    correo: "",
+    password: ""
 };
 
+
 const SigninFormSchema = Yup.object().shape({
-    email: Yup.string().email("Email is invalid").required("Email is required"),
+    correo: Yup.string().email("Email is invalid").required("Email is required"),
     password: Yup.string()
-        .min(6, "Password must be at least 6 characters")
-        .required("Password is required"),
+    .min(6, "Password must be at least 6 characters")
+    .required("Password is required"),
 });
 
 function SigninForm() {
+
+    const [modifiedData, setModifiedData] = useState({
+        correo: "",
+        password: ""
+      });
+    
+      const [errorRestaurants, setErrorRestaurants] = useState(null);
+    
+      const handleSubmit = async e => {
+        e.preventDefault();
+        console.log(modifiedData);
+        try {
+          const response = await axios.post('http://localhost:1987/login',
+            {
+              data: modifiedData,
+            }
+          );
+          console.log(response);
+        } catch (error) {
+          setErrorRestaurants(error);
+        }
+      };
+    
+      const handleChange = ({ target: { name, value } }) => {
+        setModifiedData((prev) => ({
+          ...prev,
+          [name]: value,
+        }));
+      };
+
     return (
         <>
             <Formik
                 initialValues={initialValues}
-                validationSchema={SigninFormSchema}
-                onSubmit={(fields) => {
-                    alert(
-                        "SUCCESS!! :-)\n\n" + JSON.stringify(fields, null, 4)
-                    );
-                }}
+                onSubmit={(fields) => {}}
             >
                 {({ errors, status, touched }) => (
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col-12 mb-3">
-                                <label className="form-label">Email</label>
+                                <label className="form-label">Correo</label>
                                 <Field
-                                    name="email"
+                                    name="correo"
                                     type="text"
                                     className={
                                         "form-control" +
-                                        (errors.email && touched.email
+                                        (errors.correo && touched.correo
                                             ? " is-invalid"
                                             : "")
                                     }
                                 />
                                 <ErrorMessage
-                                    name="email"
+                                    name="correo"
                                     component="div"
                                     className="invalid-feedback"
                                 />
                             </div>
 
                             <div className="col-12 mb-3">
-                                <label className="form-label">Password</label>
+                                <label className="form-label">Contraseña</label>
                                 <Field
                                     name="password"
                                     type="text"
@@ -77,13 +108,13 @@ function SigninForm() {
                                 <label
                                     className="form-check-label"
                                 >
-                                    Remember me
+                                    Recuerdame
                                 </label>
                                 </div>
                             </div>
                             <div className="col-6 text-end">
                                 <Link href="/reset">
-                                <a>Forgot Password?</a>
+                                <a>¿Olvidaste tu Contraseña?</a>
                                 </Link>
                             </div>
                         </div>
@@ -93,7 +124,7 @@ function SigninForm() {
                                 type="submit"
                                 className="btn btn-primary mr-2"
                             >
-                                Sign In
+                                Iniciar Sesión
                             </button>
                         </div>
                     </Form>

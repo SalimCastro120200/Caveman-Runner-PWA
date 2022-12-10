@@ -46,7 +46,7 @@ const Leaderboard = ({ games, error }) => {
                 pageClass={"front"}
                 headTitle={"Leaderboard"}
                 pageTitle={"Leaderboard"}
-                pageTitleSub={"Welcome Leaderboard Page"}
+                pageTitleSub={"Bienvenido al Leaderboard del Juego"}
                 parent={"Home"}
                 child={"Leaderboard"}
 
@@ -61,20 +61,16 @@ const Leaderboard = ({ games, error }) => {
                                             <tbody>
                                                 <tr>
                                                     <th>No. de la Partida</th>
-                                                    <th>ID del Jugador</th>
-                                                    {/* <th>Nickname</th> */}
+                                                    <th>GamerTag</th>
                                                     <th>Puntaje</th>
-                                                    <th>Monedas</th>
-                                                    {/* <th>Nic</th> */}
+                                                    <th>Duración</th>
                                                 </tr>
-                                                {games.map((game) => (
-                                                    <tr key={game.playerID}>
-                                                        <td>{game.id}</td>
-                                                        <td>{game.playerID}</td>
-                                                        {/* <td>{game.tb_players[0].nickname}</td> */}
-                                                        <td>{game.score}</td>
-                                                        <td>{game.coins}</td>
-                                                        {/* <td>{games.upd atedAt}</td> */}
+                                                {games.highscores.map((game) => (
+                                                    <tr key={ game.GAME }>
+                                                        <td>{ game.GAME }</td>
+                                                        <td>{ game.GAMERTAG }</td>
+                                                        <td>{ game.PUNTAJE } metros</td>
+                                                        <td>{ game.DURATION }</td>
                                                     </tr>
                                                 ))}
 
@@ -93,7 +89,7 @@ const Leaderboard = ({ games, error }) => {
 
 Leaderboard.getInitialProps = async ctx => {
     try {
-      const res = await axios.get('http://localhost:5000/games');
+      const res = await axios.get('http://localhost:1987/stats/highscores');
       const games = res.data;
       return { games };
     } catch (error) {
